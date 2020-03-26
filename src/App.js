@@ -13,7 +13,7 @@ function App() {
        <Board id = "board-1" className = "board">
          <Card id = "card-1" className = "card" draggable="true">
            <p>
-             Card one
+             Cards============== one
            </p>
          </Card>
        </Board>
