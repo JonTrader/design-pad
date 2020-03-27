@@ -37,7 +37,12 @@
   }
 }
 
-.header
+*
+{
+  margin: 3px;
+}
+
+.headerBoard
 {
   text-align: center;
 }
@@ -45,21 +50,48 @@
 
 .pad
 {
-  margin: 20px auto;
-  width:455px;
-  height:355px;
-  background-color:rgb(255, 255, 255);
-  display:grid;
-  grid-template-columns: 228px 177px;
-}
-
-.board
-{
   height: 175px;
   width: 225px;
   border: 1px solid black;
   background-color: rgb(215, 215, 215);
   border-radius: 20px;
   text-align: center;
+  margin: 1px;
 }
+
+.board
+{
+  margin: auto;
+  width:457px;
+  height:357px;
+  background-color:rgb(255, 255, 255);
+  display:grid;
+  grid-template-columns: auto auto;
+}
+
+.inputPad
+{
+  height: 50px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: rgb(215, 215, 215);
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.inputBoard
+{margin-top: 50px;
+  float: left;
+  width: 225px;
+  height: 350px;
+  background-color:rgb(228, 27, 27);
+  display:grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+
+
+
 

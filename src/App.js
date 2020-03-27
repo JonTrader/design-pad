@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import DesignBoard from './components/DesignBoard';
+import InputPad from './components/InputPad';
 
 function App() {
 
 
   return (
-    <div>
+    <span>
+    <InputPad />
     <DesignBoard />
-    </div>
+    </span>
   );
 }
 

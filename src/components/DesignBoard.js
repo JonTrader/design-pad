@@ -6,9 +6,9 @@ function Pad(props)
 {
 
     return(
-        <div className="board" >
+        <span className="pad">
             <h4>{props.name}</h4>
-        </div>
+        </span>
     )
 }
 
@@ -16,16 +16,16 @@ function DesignBoard()
 {
     return (
 
-
-        <div>
-            <h1 className='header'>Design Pad</h1>
-            <div className='pad'>
+        
+        <span>
+            <h1 className='headerBoard'>Design Pad</h1>
+            <span className='board'>
                 <Pad name="Pad1" />
                 <Pad name="Pad2" />
                 <Pad name="Pad3" />
                 <Pad name="Pad4" />
-            </div>
-        </div>
+            </span>
+        </span>
     );
 }
 
