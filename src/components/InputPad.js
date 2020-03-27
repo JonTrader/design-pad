@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './InputPad.css';
+import '../inputpad.css';
 
 function Pad(props){
     const dragStart = e =>{
