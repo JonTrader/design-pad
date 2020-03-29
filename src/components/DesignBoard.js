@@ -2,13 +2,28 @@ import React, {useState} from 'react';
 
 
 
+
 function Pad(props)
 {
 
+    const [isColor, setColor] = useState(false);
+    
+    const changeColor = () =>
+    {
+        setColor(!isColor);
+    }
+
+    
+
+
+
+
+
     return(
-        <span className="pad">
+        <div className={isColor ? "red" : "pad"} onDragEnterCapture={changeColor}>
             <h4>{props.name}</h4>
-        </span>
+            <button onClick={changeColor}>Change Color</button>
+        </div>
     )
 }
 
@@ -17,15 +32,16 @@ function DesignBoard()
     return (
 
         
-        <span>
+        <div>
             <h1 className='headerBoard'>Design Pad</h1>
-            <span className='board'>
+            <div className='board'>
                 <Pad name="Pad1" />
                 <Pad name="Pad2" />
                 <Pad name="Pad3" />
                 <Pad name="Pad4" />
-            </span>
-        </span>
+                
+            </div>
+        </div>
     );
 }
 

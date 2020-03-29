@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import DesignBoard from './components/DesignBoard';
 import InputPad from './components/InputPad';
@@ -8,10 +7,10 @@ function App() {
 
 
   return (
-    <span>
+    <div>
     <InputPad />
     <DesignBoard />
-    </span>
+    </div>
   );
 }
 
