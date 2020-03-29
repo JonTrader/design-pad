@@ -1,41 +1,38 @@
 import React, {useState}  from 'react';
 
 
-function Pad(props)
+
+
+function InputPad(props)
 {
 
-    const [isColor, setColor] = useState(false);
-    
-    const changeColor = () =>
-    {
-        setColor(true);
-    }
+    const dragStart = e => {
+        e.dataTransfer.setData("name", props.name);
+      };
 
     return(
-        <div className="inputPad" draggable onDrag={changeColor}>
+        <div className="inputPad" draggable onDragStart={dragStart}>
             <h5>{props.name}</h5>
-
         </div>
     )
 }
 
-function InputPad()
+function InputBoard()
 {
     return(
         <div>
-            <h1 className="inputHeader">Input Pad</h1>
             <div className="inputBoard">
-                <Pad name="1"/>
-                <Pad name="2"/>
-                <Pad name="3"/>
-                <Pad name="4"/>
-                <Pad name="5"/>
-                <Pad name="6"/>
-                <Pad name="7"/>
-                <Pad name="8"/>
+                <InputPad name="Green"/>
+                <InputPad name="Yellow"/>
+                <InputPad name="Red"/>
+                <InputPad name="Blue"/>
+                <InputPad name="Pink"/>
+                <InputPad name="Purple"/>
+                <InputPad name="Black"/>
+                <InputPad name="White"/>
             </div>
         </div>
     )
 }
 
-export default InputPad;
+export default InputBoard;
