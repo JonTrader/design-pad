@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import './App.css';
+import './inputpad.css';
+import DesignContainer from './components/DesignContainer';
 
-import Container from './components/Container';
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <Container />
+      <DesignContainer />
     </div>
   );
 }
