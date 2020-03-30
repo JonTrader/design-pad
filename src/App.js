@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
-import './App.css';
-import DesignBoard from './components/DesignBoard';
-import InputBoard from './components/InputBoard';
+import './inputpad.css';
+import DesignContainer from './components/DesignContainer';
+
 
 function App() {
 
 
   return (
     <div>
-    <InputBoard />
-    <DesignBoard />
+      <DesignContainer />
     </div>
   );
 }
