@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import './App.css';
 import DesignBoard from './components/DesignBoard';
-import InputPad from './components/InputPad';
+import InputBoard from './components/InputBoard';
 
 function App() {
 
 
   return (
     <div>
-    <InputPad />
+    <InputBoard />
     <DesignBoard />
     </div>
   );
