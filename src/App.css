@@ -1,65 +1,205 @@
-.App {
-  text-align: center;
+*
+{
+  margin: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerBoard
+{
+  margin-top: 20px;
+  margin-left: 850px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.OnOff
+{
+  margin-left: 420px;
+  font-size: 75px;
+  font-family: 'Arial';
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button
+{
+  margin-top: 25px;
+  margin-left: 400px;
+  height: 75px;
+  width: 140px;
+  background-color:rgb(0, 0, 0);
   color: white;
+  font-size: 35px;
+  font-family: 'Times New Roman';
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.header
+.boardPad
 {
-  text-align: center;
-}
-
-
-.pad
-{
-  margin: 20px auto;
-  width:455px;
-  height:355px;
-  background-color:rgb(255, 255, 255);
-  display:grid;
-  grid-template-columns: 228px 177px;
-}
-
-.board
-{
-  height: 175px;
-  width: 225px;
+  height: 250px;
+  width: 300px;
   border: 1px solid black;
   background-color: rgb(215, 215, 215);
   border-radius: 20px;
   text-align: center;
+  margin: 3px;
 }
+
+.board
+{
+  margin-left: 625px;
+  width:457px;
+  height:357px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.inputPadOn
+{
+  height: 50px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: rgb(215, 215, 215);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.inputBoardOn
+{
+  background-color: rgb(25, 0, 255);
+  margin-top: 70px;
+  margin-left: 350px;
+  float: left;
+  width: 250px;
+  height: 375px;
+  display:grid;
+  grid-template-columns: auto auto;
+  border-radius: 15px;
+}
+
+.inputPadOff
+{
+  height: 50px;
+  width: 100px;
+  border: 2px solid black;
+  background-color: rgb(65, 65, 65);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgb(65, 65, 65);
+}
+
+.inputBoardOff
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 70px;
+  margin-left: 350px;
+  float: left;
+  width: 250px;
+  height: 375px;
+  display:grid;
+  grid-template-columns: auto auto;
+  border-radius: 15px;
+}
+
+
+.Green
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(47, 170, 22);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Yellow
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(232, 235, 54);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Red
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Blue
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(4, 0, 255);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Pink
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(255, 151, 250);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Purple
+{
+  height: 250px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: rgb(161, 19, 204);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.Black
+{
+  height: 250px;
+  width: 300px;
+  border: 2px solid rgb(255, 0, 179);
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+.White
+{
+  height: 250px;
+  width: 300px;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+  margin: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
