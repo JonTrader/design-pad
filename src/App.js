@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import DesignBoard from './components/DesignBoard';
+import './inputpad.css';
+import DesignContainer from './components/DesignContainer';
+
+
+
 
 function App() {
 
 
   return (
     <div>
-    <DesignBoard />
+      <DesignContainer />
     </div>
   );
 }
